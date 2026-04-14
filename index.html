@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV – Technicien Informatique & Admin Systèmes/Réseaux</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/x-icon" href="/images/icon.png">
+</head>
+<body>
+
+  <!-- Curseur personnalisé -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Arrière-plan -->
+  <div class="grid-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">&gt; <span>guillaume</span>.colloc'h<span>_</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#certifications">Diplômes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-left">
+      <div class="hero-tag">// Disponible pour opportunités</div>
+      <h1 class="hero-name">
+        Guillaume<br><em>Colloc'h</em>
+      </h1>
+      <p class="hero-title">
+        <strong>Technicien Informatique</strong> · Admin Systèmes & Réseaux
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Prendre contact →</a>
+        <a href="#experience" class="btn btn-outline">Voir l'expérience</a>
+      </div>
+      <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num"></span></div>
+              <div class="stat-label"></div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><span></span></div>
+              <div class="stat-label"></div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"></div>
+              <div class="stat-label"></div>
+            </div>
+          </div>
+        </div>
+      
+    <div class="hero-right">
+          <div class="profile-photo-wrapper">
+            <div class="profile-photo-ring"></div>
+            <div class="profile-photo-ring ring2"></div>
+            <div class="profile-photo">
+              <!-- Remplace "photo.jpg" par le chemin vers ta photo -->
+              <img src="./images/photo.jpg" alt="Photo de profil" id="profileImg"
+                   onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';" />
+              <div class="profile-placeholder" id="profilePlaceholder">
+                <span class="placeholder-icon">👤</span>
+                <span class="placeholder-text">photo.jpg</span>
+              </div>
+            </div>
+            <div class="profile-status">
+              <span class="status-dot"></span> Disponible
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <div class="section-header">
+              <div class="section-tag">À propos</div>
+              <h2 class="section-title">Passionné par<br><em>l'infrastructure</em></h2>
+            </div>
+            <p></p>Technicien informatique avec <strong>2 ans d'expérience</strong> dans le support utilisateurs et la maintenance de systèmes d'information. Compétent dans la configuration, la maintenance et l’optimisation d’infrastructures réseau, notamment sur les services DHCP/DNS et les environnements Windows/Linux.
+            <p>À l'aise aussi bien sur des environnements <strong>Windows Server</strong> que <strong>Linux</strong>, j’ai développé des compétences en administration réseau (DHCP, DNS) ainsi que des bases en sécurité des systèmes.</p>
+            <div class="about-infos">
+              <div class="info-row"><span class="info-key">📍 Localisation</span><span class="info-val">Locmiquélic, Morbihan</span></div>
+              <div class="info-row"><span class="info-key">🎓 Formation</span><span class="info-val">Titre TSSR</span></div>
+              <div class="info-row"><span class="info-key">💼 Statut</span><span class="info-val">Ouvert aux offres CDI</span></div>
+              <div class="info-row"><span class="info-key">🌐 Langues</span><span class="info-val">Français · Anglais (B1)</span></div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="terminal-card">
+              <div class="terminal-bar">
+                <span class="dot dot-r"></span>
+                <span class="dot dot-y"></span>
+                <span class="dot dot-g"></span>
+                <span class="terminal-title">guillaume@srv-prod:~$</span>
+              </div>
+              <div class="terminal-body">
+                <div><span class="t-prompt">guillaume@srv-prod:~$</span> <span class="t-cmd">whoami --verbose</span></div>
+                <div class="t-out">─────────────────────────────</div>
+                <div><span class="t-val">name</span>: <span class="t-out">Guillaume Colloch</span></div>
+                <div><span class="t-val">role</span>: <span class="t-out">Admin Sys & Réseaux</span></div>
+                <div><span class="t-val">os</span>: <span class="t-out">Linux / Windows Server</span></div>
+                <div><span class="t-val">uptime</span>: <span class="t-out">2 ans d'expérience</span></div>
+                <div class="t-out">─────────────────────────────</div>
+                <div><span class="t-prompt">guillaume@srv-prod:~$</span> <span class="t-cmd">systemctl status network</span></div>
+                <div><span style="color:#28ca41">● network.service</span> <span class="t-out">- Active (running)</span></div>
+                <div class="t-out">&nbsp;&nbsp;Load: loaded; enabled</div>
+                <div class="t-out">&nbsp;&nbsp;Tasks: 247 · Memory: 4.2G</div>
+                <div><span class="t-prompt">guillaume@srv-prod:~$</span> <span class="cursor-blink"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Compétences</div>
+          <h2 class="section-title">Mon stack <em>technique</em></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">🖧</div>
+            <div class="skill-category">Réseaux</div>
+            <div class="skill-name">Infrastructure réseau</div>
+            <div class="skill-tags">
+              <span class="tag">TCP/IP</span><span class="tag">VLANs</span><span class="tag">IPV4/IPV6</span>
+              <span class="tag">Modèle OSI</span><span class="tag">pfSense</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🐧</div>
+            <div class="skill-category">Systèmes</div>
+            <div class="skill-name">Linux & Windows Server</div>
+            <div class="skill-tags">
+              <span class="tag">Ubuntu</span><span class="tag">Debian</span><span class="tag">AGDLP</span>
+              <span class="tag">WS 2019/2022</span><span class="tag">Active Directory</span><span class="tag">GPO</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">☁️</div>
+            <div class="skill-category">Cloud & Virtualisation</div>
+            <div class="skill-name">Virtualisation & Cloud</div>
+            <div class="skill-tags">
+              <span class="tag">VMware Workstation</span><span class="tag">Sauvegarde</span><span class="tag">vMotion</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🔒</div>
+            <div class="skill-category">Sécurité</div>
+            <div class="skill-tags">
+              <span class="tag">Pare-feu</span><span class="tag">Passeword</span><span class="tag">Bitwarden</span>
+              <span class="tag">Sensibilsiation Itil</span><span class="tag">SSH</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">⚙️</div>
+            <div class="skill-category">Automatisation</div>
+            <div class="skill-name">Scripting</div>
+            <div class="skill-tags">
+              <span class="tag">Bash</span><span class="tag">PowerShell</span><span class="tag">GitHub</span>
+              <span class="tag">Html</span><span class="tag">Css</span><span class="tag">Js</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">📊</div>
+            <div class="skill-category">Microsoft 365</div>
+            <div class="skill-name">Suite Office</div>
+            <div class="skill-tags">
+              <span class="tag">Word</span><span class="tag">Excel</span><span class="tag">Onedrive</span>
+              <span class="tag">Outlook</span><span class="tag">Teams</span><span class="tag">Powerpoint</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Expérience</div>
+          <h2 class="section-title">Parcours <em>professionnel</em></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="exp-date">Sept 2025 – Présent</div>
+            <div class="exp-role">Technicien support informatique (CDI)</div>
+            <div class="exp-company">Progial Synapsy · Concarneau</div>
+            <p class="exp-desc">Assurer le dépannage à distance des logiciels de caisses, des différents appareils (monnayeurs, TPE, imprimantes). Répondre à divers questions sur les logiciels Alecto et Iris. Gérer la création de tickets.</p>
+            <div class="exp-tags">
+              <span class="exp-tag">IRIS</span><span class="exp-tag">Alecto</span><span class="exp-tag">Slack</span><span class="exp-tag">Teams</span><span class="exp-tag">Hermes</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="exp-date">Janv 2024 – Juil 2025</div>
+            <div class="exp-role">Technicien support informatique (Alternance)</div>
+            <div class="exp-company">Progial Synapsy · Concarneau</div>
+            <p class="exp-desc">Assurer le dépannage à distance des logiciels de caisses, des différents appareils (monnayeurs, TPE, imprimantes). Répondre à divers questions sur les logiciels Alecto et Iris. Gérer la création de tickets.</p>
+            <div class="exp-tags">
+              <span class="exp-tag">IRIS</span><span class="exp-tag">Alecto</span><span class="exp-tag">Slack</span><span class="exp-tag">Teams</span><span class="exp-tag">Hermes</span>
+           </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="exp-date">Janv 2023 – Juin 2023</div>
+            <div class="exp-role">My Digital Project</div>
+            <div class="exp-company">My Digital School · Nantes</div>
+            <p class="exp-desc">Créer un projet en équipe qui répond à un besoin concret. Création du projet Nefti, un site web qui permet d'accompagner les personnes en 
+              situation de deuil (démarches administratives, mise en relation avec des psychologues...)</p>
+            <div class="exp-tags">
+              <span class="exp-tag">Vs Code</span><span class="exp-tag">Teams</span><span class="exp-tag">Canva</span><span class="exp-tag">Html/Css</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="exp-date">Déc 2022</div>
+            <div class="exp-role">English Game</div>
+            <div class="exp-company">My Digital School · Nantes</div>
+            <p class="exp-desc">
+             🏆 Award du meilleur jeu à Nantes<br/>
+             Créer un jeu de société en mode projet à but ludique pour apprendre un sujet comme la culture du design graphique en anglais pendant 1
+             semaine regroupant toutes les écoles My Digital School de France
+             <div class="exp-tags">
+    <span class="exp-tag">Sony Vegas Pro</span>
+  </div>
+          </div>
+           <div class="timeline-item reveal">
+  <div class="timeline-dot"></div>
+  <div class="exp-date">Janv 2022</div>
+  <div class="exp-role">Game Jam</div>
+  <div class="exp-company">My Digital School · Nantes</div>
+
+  <p class="exp-desc">
+    🏆 Award du meilleur jeu remis par les étudiants <br/>
+    🏆 Award du meilleur Game Design concept <br/>
+    Créer un jeu vidéo en groupe en 1 semaine regroupant toutes les écoles My Digital School de France
+  </p>
+
+  <div class="exp-tags">
+    <span class="exp-tag">GDEVELOP</span>
+    <span class="exp-tag">Sony Vegas Pro</span>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ── -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Certifications</div>
+          <h2 class="section-title">Diplômes & <em>certifs</em></h2>
+        </div>
+        <div class="certs-grid">
+          <div class="cert-card reveal">
+            <div class="cert-badge">🛡️</div>
+            <div>
+              <div class="cert-name">Titre TSSR</div>
+              <div class="cert-org">ENI · Quimper</div>
+              <div class="cert-year">// 2023 - 2025</div>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-badge"><img src="https://flagcdn.com/w20/gb.png" alt="UK" /></div>
+            <div>
+              <div class="cert-name">TOEIC</div>
+              <div class="cert-org">My Digital School . Nantes</div>
+              <div class="cert-year">// 2023</div>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-badge">🔐</div>
+            <div>
+              <div class="cert-name">Attestation de SecNum Académie</div>
+              <div class="cert-org">My Digital School . Nantes</div>
+              <div class="cert-year">// 2023</div>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-badge">🎓</div>
+            <div>
+              <div class="cert-name">Bac STMG – option mercatique <br/>(mention assez-bien)</div>
+              <div class="cert-org">Lycée Victor Hugo · Hennebont</div>
+              <div class="cert-year">// 2017 - 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="reveal">
+            <h2 class="contact-cta-title">Travaillons<br><em>ensemble</em></h2>
+            <p class="contact-cta-sub">Vous recherchez un profil pour renforcer vos équipes IT ou contribuer à vos projets d’infrastructure ? Contactez-moi.</p>
+          </div>
+          <div class="contact-links reveal">
+            <a href="mailto:alex.dupont@email.com" class="contact-link">
+              <div class="contact-link-icon">📧</div>
+              <div class="contact-link-text">guillaumecolloch56@gmail.com</div>
+            </a>
+            <a href="tel:+33612345678" class="contact-link">
+              <div class="contact-link-icon">📱</div>
+              <div class="contact-link-text">07 82 60 43 67</div>
+            </a>
+            <a href="https://www.linkedin.com/in/guillaume-colloc-h/" class="contact-link" target="_blank">
+              <div class="contact-link-icon">💼</div>
+              <div class="contact-link-text">linkedin.com/in/guillaumecolloch</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Guillaume Colloc'h</span>
+    <span>Conçu avec passion · Locmiquélic, France</span>
+    <span style="color:var(--accent3)">status: <span style="color:var(--accent1)">disponible</span></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
