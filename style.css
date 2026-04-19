@@ -742,7 +742,6 @@ footer {
   .container { padding: 0 12px; }
   .terminal-body { display: none; } /* masque le terminal sur très petit écran */
   .terminal-card::after {
-    content: '> whoami  →  Alexandre Dupont';
     display: block;
     padding: 16px;
     font-family: 'JetBrains Mono', monospace;
